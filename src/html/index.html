@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+  
+</head>
+
+<body>
+    <section class="container">
+        <div class="calculadora">
+            <input disabled class="visor" id="display" placeholder="0">
+            
+            <button onclick="apagar()" class="item operacao apagar_tela" >AC</button>
+            <button onclick="invertValores()" class="item operacao invert_valores">+/-</button>
+            <button onclick="percent('%')" class="item operacao percent">%</button>
+            <button onclick="insereValor('/')" class="item operacao-direita dividir_valores">/</button>
+
+            <button onclick="insereValor('7')"  class="item btn7 numero">7</button>
+            <button onclick="insereValor('8')" class="item btn8 numero">8</button>
+            <button onclick="insereValor('9')" class="item btn9 numero">9</button>
+            <button onclick="insereValor('*')" class="item operacao-direita item btn_Mult">x</button>
+
+            <button onclick="insereValor('4')" class="item btn4 numero">4</button>
+            <button onclick="insereValor('5')" class="item btn5 numero">5</button>
+            <button onclick="insereValor('6')" class="item btn6 numero">6</button>
+            <button onclick="insereValor('-')" class="item operacao-direita item btn_sub">-</button>
+
+            <button onclick="insereValor('1')" class="item btn1 numero">1</button>
+            <button onclick="insereValor('2')" class="item btn2 numero">2</button>
+            <button onclick="insereValor('3')" class="item btn3 numero">3</button>
+            <button onclick="insereValor('+')" class="item operacao-direita item btn_ad">+</button>
+
+            <button onclick="insereValor('0')" class="item btn_zero numero">0</button>
+            <button onclick="insereValor('.')" class="item btn. numero">.</button>
+            <button onclick="resultado()" class="item operacao-direita item btn_result">=</button>
+            
+
+
+        </div>
+    </section>
+    
+</body>
+<script src="../js/script.js"></script>
+</html>
